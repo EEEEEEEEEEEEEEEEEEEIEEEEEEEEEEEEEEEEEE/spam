@@ -1,0 +1,61 @@
+/*清除默认格式*/
+*{margin:0;padding:0;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+body{margin:0;}
+/*主体部分*/
+/*rules*/
+.rules{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+}
+.rules_contain{
+	display: block;
+	margin:4vh auto;
+	width: 92vw;
+	height: 92vh;
+	border:1px #0000FF solid;
+	box-shadow: 0 1px 2px #000;
+	text-align: center;
+}
+.rules_contain .rules_head{
+	font-size: .6rem;
+	color: #ff0000;
+}
+.rules_contain .rules_txt{
+	font-size: .8rem;
+	line-height: 1.8rem;
+	font-weight: bold;
+}
+.rules_contain .rules_txt2{
+	font-size: .5rem;
+    padding-top: .8rem;
+    padding-bottom: 0.5rem;
+}
+.rules_contain .rules_txt3{
+	font-size: .5rem;
+}
+.rules_img{
+	width: 92vw;
+	height: 40vw;
+}
+.rules_img dt{
+	float: left;
+	width: 25vw;
+	height: 40vw;
+	margin-left: 4.25vw;
+	margin-top: 0.5rem;
+}
+.rules_img dt img{
+	width: 100%;
+}
+.icon_back{
+    width: 1.2rem;
+    height: 1.2rem;
+  
+}

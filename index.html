@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+	<title>一万口新鲜</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-4.2.2.min.css">
+	<script src="js/iconfont.js" type="text/javascript" ></script>
+	<script src="js/flex.js"></script>
+  	<script src="js/html5.js"></script>
+</head>
+<body>
+  <div class="wrapAll">
+	<!-- loading -->
+	<div class="Loading">
+		<div class="loading_header">
+			<img class="loading_shine" src="images/loading_shine.png" alt="">
+		</div>
+		<div class="loading_mid">
+			<div class="progress">0%</div>
+			<div class="loadingTxt">Loading.....</div>
+		</div>
+		<div class="loading_footer">
+			<img class="loadImg1" src="images/loading_img.png" alt="">
+			<img class="loadImg2" src="images/loading_img.png" alt="">
+			<img class="loadImg3" src="images/loading_img.png" alt="">
+			<img class="loadImg4" src="images/loading_img.png" alt="">
+			<img class="loadImg5" src="images/loading_img.png" alt="">
+		</div>
+	</div>
+	<!-- loading结束 -->
+
+	<!-- introduce -->
+	<div class="introduce">
+		<div class="in_header">
+			为世界豪强打call,<br/>吃世帮料理！
+		</div>
+		<div class="in_mid">
+			<img class="introduce_txt" src="images/introduc_txt.png" alt="">
+			<svg class="icon icon_cursor" aria-hidden="true">
+			  <use xlink:href="#icon-dianji"></use>
+			</svg>
+		</div>
+		<div class="in_footer">
+			<div class="Green">
+        <div class="footable">
+          <img src="images/footable.png" alt="">
+        </div>
+				<p class="footShadow"></p>
+				<p class="in_foot_txt">我来打call</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- introduce结束 -->
+
+	<!-- food -->
+	<div class="Food">
+		<div class="Food_list">
+			<dl class="List">
+				<dt>
+					<img src="images/shousi.png" alt="">
+					<div class="list_txt"><p>中场餐肉<br>寿司</p></div>
+				</dt>
+				<dt>
+					<img src="images/chaofan.png" alt="">
+					<div class="list_txt"><p>禁区无敌<br>黄金炒饭</p></div>
+				</dt>
+				<dt>
+					<img src="images/gaijiaofan.png" alt="">
+					<div class="list_txt"><p>炙火开球<br>冠军炒饭</p></div>
+				</dt>
+			</dl>
+		</div>
+		
+		<!-- detail -->
+			<div class="detail1 detailAll">
+				<div class="detail1_head Head_txt">
+					<i>看球料理之</i>
+					<img src="images/shousi.png" alt="">
+					<p>中场餐肉<br>寿司</p>
+				</div>
+				<div class="detail_txt">
+					<p>菜谱：XXXXXXXXXX</p>
+					<p>配料：XXXXXXXXXX</p>
+				</div>
+				<div class="detail_close">
+					<svg class="icon_detail_close" aria-hidden="true"><use xlink:href=" #icon-guanbi1"></use></svg>
+				</div>
+			</div>
+			<div class="detail2 detailAll">
+				<div class="detail2_head Head_txt">
+					<i>看球料理之</i>
+					<img src="images/chaofan.png" alt="">
+					<p>禁区无敌<br>黄金炒饭</p>
+				</div>
+				<div class="detail_txt">
+					<p>菜谱：XXXXXXXXXX</p>
+					<p>配料：XXXXXXXXXX</p>
+				</div>
+				<div class="detail_close">
+					<svg class="icon_detail_close" aria-hidden="true"><use xlink:href=" #icon-guanbi1"></use></svg>
+				</div>
+			</div>
+			<div class="detail3 detailAll">
+				<div class="detail3_head Head_txt">
+					<i>看球料理之</i>
+					<img src="images/gaijiaofan.png" alt="">
+					<p>炙火开球<br>冠军炒饭</p>
+				</div>
+				<div class="detail_txt">
+					<p>菜谱：XXXXXXXXXX</p>
+					<p>配料：XXXXXXXXXX</p>
+				</div>
+				<div class="detail_close">
+          <svg class="icon_detail_close" aria-hidden="true"><use xlink:href=" #icon-guanbi1"></use></svg>
+				</div>
+			</div>
+
+		<!-- footer -->
+		<div class="Food_footer">
+			<p>看饱了，回去打call</p>
+		</div>
+	</div>
+	<!-- food结束 -->
+	
+<!-- upLoad -->
+	<div class="upLoad">
+    <div class="upLoadPage upLoadBack">
+      <div class="upLoadTitle">上传你的酷照</div>
+      <div class="main">
+        <div class="upLoadImg">
+          <div class="PhotoFrame">
+            <section class="filedLoad">
+              <div class="filedLoad_Bg" style="background-image: url('images/BJ1.jpg')"></div>
+              <div class="labels">
+                <label>
+                  <input type="file" name="uploadPicture" class="imgTest" accept=".jpg,.jpeg,.png">
+                </label>
+              </div>
+              <div id="img"></div>
+              <div class="img-two"></div>
+            </section>
+          </div>
+          <div class="upLoadBtns">
+            <a class="upLoadHref" href="javascript:;">活动 <br> 规则</a>
+            <em class="upLoadTos">确认上传</em>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upLoadFooter upLoadBack">
+      <div class="upLoadTitle">选择你支持的球队</div>
+      <div class="main">
+        <div class="upLoadImg">
+          <div class="PhotoFrame">
+            <div class="filedLoad">
+              <div class="img-two"></div>
+              <canvas id="canvasTwo"></canvas>
+            </div>
+          </div>
+          <div class="SlideLoop">
+            <div class="selectBlessing-container">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title">A队</div>
+                    <ul class="clearfix">
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/mg.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title">B队</div>
+                    <ul class="clearfix">
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-title">C队</div>
+                    <ul class="clearfix">
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                      <li class="item"><img src="images/bas.png" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="up_btns">生成海报</div>
+          </div>
+          <div style="visibility: hidden;opacity: 0;">
+            <img class="newImg" src="" alt="">
+            <img class="loadImg" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upLoadImgs upLoadBack">
+      <div class="PhotoFrame">
+        <div class="upLoadImgsCtrl">
+          <img class="loadImg" src="" alt="">
+        </div>
+      </div>
+      <div class="upLoadImgsFoo">
+        <div class="lists lists1"><img src="images/load_btn.png" alt=""></div>
+        <div class="lists lists2">
+          <a href="##"><img src="images/load_btn2.png" alt=""></a>
+          <!--<a href="##" class="listRess">进入全球人气榜</a>-->
+          <!--<div class="upLoadBlog">赢终究大礼 <img src="images/blog.png" alt=""></div>-->
+        </div>
+      </div>
+    </div>
+    <div class="WrittenWords">
+      <div class="wWordsMain">
+        <em class="list">面部识别</em>
+        <em class="list">激情扫描</em>
+        <em class="list">活力注入</em>
+        <em class="list">能量注体</em>
+        <em class="list">正在生成中。。。</em>
+      </div>
+    </div>
+    <div class="LoadingCall">
+      <div class='loader'>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loaderTime">正在生成，请稍等</div>
+    </div>
+  </div>
+
+
+<!-- rules -->
+	<div class="rules">
+		<div class="rules_contain">
+			<p class="rules_head">活动规则</p>
+			<p class="rules_txt">为你支持的球队加油<br/>一站到底<br/>赢取神秘大礼</p>
+			<p class="rules_txt2">根据8强赛，4强，决赛的时间<br/>共三轮抽奖</p>
+			<p class="rules_txt3">官方定期公布中奖名单，请及时关注</p>
+			<dl class="rules_img">
+				<dt><img src="images/prize1.png" alt=""><p>2018世界杯吉祥物公仔</p></dt>
+				<dt><img src="images/prize2.png" alt=""><p>正版球衣</p></dt>
+				<dt><img src="images/prize3.png" alt=""><p>PS4+FIF<br/>A17</p></dt>
+			</dl>
+			<svg class="icon icon_back" aria-hidden="true" id= 'Back'>
+			  <use xlink:href="#icon-zhiyuanfanhui3"></use>
+			</svg>
+		</div>
+	</div>
+	<!-- rules结束 -->
+
+ <!-- B6 -->
+  <div class="user_choose">
+    <div class="choose_head">
+      <img src="images/B6_head.jpg" alt="">
+    </div>
+    <div class="choose_jincai">
+      <p class="jincai_txt1">竞猜榜</p>
+      <p class="jincai_txt2">当前竞猜人数:</p><p class="jincai_txt3">10000</p>
+    </div>
+    <div class="choose_mid">
+      <table class="top_team">
+        <thead class="Thead">
+          <tr>
+            <th>球队</th>
+            <th>站队人数</th>
+            <th>影响力</th>
+          </tr>
+        </thead >
+        <tbody class="Tbody">
+          <tr>
+            <td>法国</td>
+            <td>5010</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>日本</td>
+            <td>3000</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>巴西</td>
+            <td>2100</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>德国</td>
+            <td>1500</td>
+            <td>4</td>
+          </tr>
+          <tr class="OutTeam">
+            <td>意大利</td>
+            <td>800</td>
+            <td>5</td>
+          </tr>
+          <tr class="OutTeam">
+            <td>匈牙利</td>
+            <td>300</td>
+            <td>6</td>
+          </tr>
+          <tr class="OutTeam">
+            <td>英国</td>
+            <td>200</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>意大利</td>
+            <td>800</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>匈牙利</td>
+            <td>300</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>英国</td>
+            <td>200</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="choose_foot">
+      <div class="foot1"><p>邀请好友<br>并肩作战</p></div>
+      <div class="foot2">
+        <div class="foot2_left">
+          <div class="B6_xuanzhuan">
+          <svg class="icon icon_xuanzhuan2" aria-hidden="true"><use xlink:href="#icon-xuanzhuan"></use></svg></div>
+          <p>更换主队</p></div>
+        <div class="foot2_right"><p><a href="##">世帮料理，了解一下？</a></p></div>
+      </div>
+    </div>
+  <!-- B6弹窗 -->
+  <div class="cover_share">
+    <div class="cover_contain">
+      <div class="contain_head">
+        <p>分享给好友</p>
+        <div class="head_close">
+          <svg class="icon_close" aria-hidden="true"><use xlink:href="#icon-guanbi"></use></svg>
+        </div>
+      </div>
+      <div class="contain_mid">
+        <div class="contain_midH">
+          <h2>本轮八强</h2>
+          <p>你支持的球队是</p>
+          <i>巴西队</i>
+        </div>
+        <form action="##" method="get" accept-charset="utf-8" class="contain_form" >
+          <input type="number" maxlength=11 name="phoneNum" placeholder="输入手机号， 参与抽奖" class="phoneNum"><br>
+          <buttom type="submit" class="phoneSubmit"/>确认</buttom>
+        </form>
+      </div>
+      <div class="contain_foot">
+        <div class="contain_footL">
+          <svg class="icon_footL" aria-hidden="true"><use xlink:href="#icon-weixin"></use></svg><br>
+          <p>微信好友</p>
+        </div>
+        <div class="contain_footM">
+          <svg class="icon_footM" aria-hidden="true"><use xlink:href="#icon-pengyouquan"></use></svg><br>
+          <p>朋友圈</p>
+        </div>
+        <div class="contain_footR">
+          <svg class="icon_footR" aria-hidden="true"><use xlink:href="#icon-kongjian"></use></svg><br>
+          <p>QQ空间</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- B6弹窗 结束 -->
+
+  <!-- B6 success -->
+  <div class="successWrap">
+    <div class="success">
+      <div class="success_contain">
+        <div class="success_wrap">
+          <strong>已提交</strong><br>
+          <i>快去看看<br/>你有多少站友</i>  
+        </div>
+        
+      </div>
+    </div>  
+  </div>
+  <!-- B6 success 结束 -->
+
+  <div class="share">
+    <svg class="icon_zhuanfa" aria-hidden="true"><use xlink:href="#icon-icon_zhuanfa"></use></svg>
+    <p>呼唤好友<br/>并肩作战</p>
+  </div>
+</div>
+  <!-- B6 结束-->
+  
+</div> <!-- wrapAll结束 -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/exif.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/cutimg.js"></script>
+  <script src="js/lrz.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
+  <script>
+    var _lss = $('.selectBlessing-container .swiper-slide').length;
+    if(_lss>2){
+      var mySwiper = new Swiper('.selectBlessing-container .swiper-container', {
+        speed: 500,
+        pagination : '.swiper-pagination',
+        paginationClickable :true,
+        //paginationType : 'fraction',
+        paginationElement : 'li',
+        //autoplay: 12000,
+        loop:true,
+        slidesPerView : 2,//显示个数
+        slidesPerGroup : 1 //滚动个数
+      });
+      $(".swiper-button-prev").on("touchstart",function(){
+        mySwiper.slidePrev();
+      });
+      $(".swiper-button-next").on("touchstart",function(){
+        mySwiper.slideNext();
+      })
+    }
+  </script>
+</body>
+</html>
