@@ -79,23 +79,21 @@ $(document).ready(function(){
 
 	//top 
 	// 检测电话号码
-		$('.phoneNum').bind('change', function(){
-				var Num =$('.phoneNum').val();
-				var myreg=/^[1][3,4,5,7,8][0-9]{9}$/; 
-				if(!myreg.test(Num)){
-					alert('请输入正确号码')
-				}
-		})
-
-	$('.phoneSubmit').on('click',function(){
-		$('.cover_share').fadeOut(200);
-		$('.successWrap').fadeIn(200);
-		$('.successWrap').on('click',function(){
-			$('.successWrap').fadeOut(200);
-		})
-		setTimeout(function(){
-			$('.successWrap').fadeOut(200);
-		},2000)
+	$('.phoneSubmit').on('click',function(){//点击时检测号码
+		var Num =$('.phoneNum').val();
+		var myreg=/^[1][3,4,5,7,8][0-9]{9}$/; 
+		if(!myreg.test(Num)){
+			alert('请输入正确号码')
+		}else{ //触发点击事件
+			$('.cover_share').fadeOut(200);
+			$('.successWrap').fadeIn(200);
+			$('.successWrap').on('click',function(){
+				$('.successWrap').fadeOut(200);
+			})
+			setTimeout(function(){
+				$('.successWrap').fadeOut(200);
+			},2000)
+			}
 	})
 
 	// share
