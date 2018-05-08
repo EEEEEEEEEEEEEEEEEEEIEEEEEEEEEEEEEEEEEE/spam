@@ -99,6 +99,7 @@ $(document).ready(function(){
 	//input高度固定
 	var HEIGHT = $('.user_choose').height();
 	    $(window).resize(function() {
+	    	console.log(HEIGHT)
         	$('.user_choose').height(HEIGHT);
     	});
 

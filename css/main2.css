@@ -689,6 +689,7 @@ body{
 	width: 80vw;
 	height: 55vh;
 	background-color: #fff;
+	overflow: hidden;
 }
 .contain_head{
 	position: absolute;
@@ -727,20 +728,23 @@ body{
 	height: 35vh;
 	width: 100%;
 	text-align: center;
+	overflow: hidden;
 }
 .contain_midH{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 101%;
 	height: 70%;
 	overflow: hidden;
 	text-align: center;
+	line-height: 6vh;
 }
 .contain_mid h2{
-	font-style: normal;
-	color: #FF0000;
-	font-size: .8rem;
+    font-style: normal;
+    color: #FF0000;
+    font-size: .8rem;
+    margin-top: .5rem;
 }
 .contain_mid p{
 	font-style: normal;
@@ -751,7 +755,6 @@ body{
 	font-style: normal;
 	color: #000;
 	font-size: .8rem;
-	margin-bottom: 1rem;
 }
 .contain_form{
 	position: absolute;
@@ -767,7 +770,8 @@ input::-webkit-input-placeholder{
 	text-align: center;
 }
 .contain_mid .phoneNum{
-    width: 70%;
+	width: 60%;
+    height: 34%;
     border-radius: 2vw;
     border: 1px solid #A9A9A9;
     padding: .2vh 2vh;
@@ -775,7 +779,8 @@ input::-webkit-input-placeholder{
     letter-spacing: .2vw;
 }
 .contain_mid .phoneSubmit{
-	display: block;
+    display: block;
+    font-size: 5vw;
     width: 16vw;
     margin: 2vh auto 0;
     border-radius: 3vw;
