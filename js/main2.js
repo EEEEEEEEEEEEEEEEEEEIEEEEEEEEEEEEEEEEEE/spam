@@ -81,10 +81,10 @@ $(document).ready(function(){
 
 	//top 
 		//input高度固定
-	    // $(window).resize(function() {
-     //    	$('.user_choose').height(HEIGHT);
-     //    	$('.cover_share').height(HEIGHT);	
-    	// });
+	    $(window).resize(function() {
+        	$('.user_choose').height(HEIGHT);
+        	$('.cover_share').height(HEIGHT);	
+    	});
 	
 	// 检测电话号码
 	$('.phoneSubmit').on('click',function(){//点击时检测号码
