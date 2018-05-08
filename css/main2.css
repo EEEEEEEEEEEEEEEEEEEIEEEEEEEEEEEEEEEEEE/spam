@@ -496,10 +496,11 @@ body{
     background-color: rgb(128, 0, 0);
     font-size: 0.4rem;
     color: #fff;
-    line-height: 4vh;
+    display: table;
 }
 .choose_jincai p{
-	display: inline;
+	display: table-cell;
+	vertical-align: middle;
 }
 .jincai_txt1{
 	padding-left: 3vw;
