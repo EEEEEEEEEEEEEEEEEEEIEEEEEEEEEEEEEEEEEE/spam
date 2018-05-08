@@ -81,13 +81,13 @@ $(document).ready(function(){
 
 	//top 
 		//input高度固定
+		$('.phoneNum').val(HEIGHT)
 	    $(window).resize(function() {
-	    	alert(HEIGHT);
         	$('.user_choose').height(HEIGHT);
         	$('.cover_share').height(HEIGHT);
         	setTimeout(function(){
-        		alert($('.user_choose').height())
-        	},1000)
+        		$('.phoneNum').val($('.cover_share').height())
+        	},1000) 	
     	});
 	
 	// 检测电话号码
