@@ -86,65 +86,7 @@ body{
 
 /*loading结束*/
 
-/*rules*/
-.rules{
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	overflow: hidden;
-	display: none;
-	z-index: 10001;
-	background-color: #fff;
-}
-.rules_contain{
-	display: block;
-	margin:4vh auto;
-	width: 92vw;
-	height: 92vh;
-	border:1px #0000FF solid;
-	box-shadow: 0 1px 2px #000;
-	text-align: center;
-}
-.rules_contain .rules_head{
-	font-size: .6rem;
-	color: #ff0000;
-}
-.rules_contain .rules_txt{
-	font-size: .8rem;
-	line-height: 1.8rem;
-	font-weight: bold;
-}
-.rules_contain .rules_txt2{
-	font-size: .5rem;
-    padding-top: .8rem;
-    padding-bottom: 0.5rem;
-}
-.rules_contain .rules_txt3{
-	font-size: .5rem;
-}
-.rules_img{
-	width: 92vw;
-	height: 40vw;
-}
-.rules_img dt{
-	float: left;
-	width: 25vw;
-	height: 40vw;
-	margin-left: 4.25vw;
-	margin-top: 0.5rem;
-}
-.rules_img dt img{
-	width: 100%;
-}
-.icon_back{
-    width: 1.2rem;
-    height: 1.2rem;
-  
-}
-
-
-/*face动画*/
-
+/*introduc*/
 
 .introduce{
 	position: absolute;
@@ -429,56 +371,71 @@ body{
 
 }
 
-
-/*文字laoding*/
-.txt_laod{
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
-	line-height: 2rem;
-	padding-top: 15vh;
-	color: #008000;
-	font-size: .6rem;
-	letter-spacing: .1rem
-}
-
 /*rules*/
 .rules{
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
+	top: 0;
+	left: 0;
 	overflow: hidden;
+	display: none;
+	z-index: 10001;
+	background-color: #fff;
 }
 .rules_contain{
+	position: absolute;
+	left: 4vw;
+	top: 4vh;
 	display: block;
-	margin:4vh auto;
 	width: 92vw;
 	height: 92vh;
 	border:1px #0000FF solid;
 	box-shadow: 0 1px 2px #000;
 	text-align: center;
+	color: #000;
 }
 .rules_contain .rules_head{
-	font-size: .6rem;
-	color: #ff0000;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    text-align: center;
 }
-.rules_contain .rules_txt{
-	font-size: .8rem;
-	line-height: 1.8rem;
-	font-weight: bold;
+.rules_head .rules_txt1{
+    font-size: .6rem;
+    color: #ff0000;
+    margin: 2vh 0;
 }
-.rules_contain .rules_txt2{
+.rules_head .rules_txt2{
+    font-size: .8rem;
+    font-weight: bold;
+    height: 28vh;
+    line-height: 9vh;
+}
+.rules_head .rules_txt3{
 	font-size: .5rem;
-    padding-top: .8rem;
-    padding-bottom: 0.5rem;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 9vh;
 }
-.rules_contain .rules_txt3{
+.rules_head .rules_txt4{
 	font-size: .5rem;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3vh;
 }
 .rules_img{
-	width: 92vw;
-	height: 40vw;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 92vw;
+    height: 25%;
 }
 .rules_img dt{
 	float: left;
@@ -492,81 +449,20 @@ body{
 }
 .icon_back{
     width: 1.2rem;
-    height: 1.2rem;
-  
+    height: 1.2rem; 
 }
-
-/*B5*/
-.user_img{
+.rules_foot{
 	position: absolute;
-	width: 100vw;
-	height: 100vh;
-}
-.user_photo{
-	border:1px dotted #000;
-	width: 80vw;
-	height: 62vh;
-	position: absolute;
-	top: 15vh;
-	left: 10vw;
-	overflow: hidden;
-	box-shadow: 1px 2px 2px #789;
-	display: table;
+	left: 0;
+	bottom: 5%;
+	width: 100%;
 	text-align: center;
 }
-.user_photo img{
-	width: 100%;
-	height: 100%;
-}
-.user_bt{
-	position: absolute;
-	top: 82vh;
-	width: 100vw;
-}
-.bt_team{
-	float: left;
-    border-radius: 6px;
-    background-color: #7c7c7c;
-    color: #fff;
-    margin-left: 10vw;
-    font-size: 0.5rem;
-    letter-spacing: 0.1rem;
-    height: 11vw;
-    width: 30vw;
-    display: table;
-    text-align: center;
-}
-.bt_team p{
-	display: table-cell;
-	vertical-align: middle;
-}
-.bt_top{
-	float: left;
-    border-radius: 6px;
-    background-color: #7c7c7c;
-    color: #fff;
-    margin-left: 2vw;
-    font-size: 0.5rem;
-    height: 11vw;
-    width: 50vw;
-    display: table;
-    text-align: center;
-}
-.bt_top p{
-	display: table-cell;
-	vertical-align: middle;
-}
-.icon_xuanzhuan{
-	width: 1rem;
-    height: 1rem;
-    fill: currentColor;
-    vertical-align: -0.15em
-}
-/*B5结束*/
 /*B6*/
 .user_choose{
 	position: absolute;
 	top:0;
+	bottom: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;

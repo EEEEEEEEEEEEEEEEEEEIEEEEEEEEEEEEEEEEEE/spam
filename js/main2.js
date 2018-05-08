@@ -96,6 +96,13 @@ $(document).ready(function(){
 			}
 	})
 
+	//input高度固定
+	var HEIGHT = $('.user_choose').height();
+	    $(window).resize(function() {
+        	$('.user_choose').height(HEIGHT);
+    	});
+
+
 	// share
 	$('.share').on('click',function(){
 		$(this).stop().fadeOut(200)
