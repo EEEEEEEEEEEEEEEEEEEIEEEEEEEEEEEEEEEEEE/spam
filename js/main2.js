@@ -55,6 +55,8 @@
 //laoding动画结束
 
 $(document).ready(function(){
+	var HEIGHT = $('.user_choose').height();
+
 	$('.in_mid').click(function(){
 		$('.Food').addClass('active')
 	})
@@ -78,6 +80,16 @@ $(document).ready(function(){
 	})
 
 	//top 
+		//input高度固定
+	    $(window).resize(function() {
+	    	alert(HEIGHT);
+        	$('.user_choose').height(HEIGHT);
+        	$('.cover_share').height(HEIGHT);
+        	setTimeout(function(){
+        		alert($('.user_choose').height())
+        	},1000)
+    	});
+	
 	// 检测电话号码
 	$('.phoneSubmit').on('click',function(){//点击时检测号码
 		var Num =$('.phoneNum').val();
@@ -96,13 +108,6 @@ $(document).ready(function(){
 			}
 	})
 
-	//input高度固定
-	var HEIGHT = $('body').height();
-	    $(window).resize(function() {
-        	$('.user_choose').height(HEIGHT);
-        	$('.cover_share').height(HEIGHT);
-        	
-    	});
 
 	// share
 	$('.share').on('click',function(){
