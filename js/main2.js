@@ -55,7 +55,7 @@
 //laoding动画结束
 
 $(document).ready(function(){
-	var HEIGHT = $('.wrapAll').height();
+	var HEIGHT = $('body').height();
 
 	$('.in_mid').click(function(){
 		$('.Food').addClass('active')
@@ -82,7 +82,6 @@ $(document).ready(function(){
 	//top 
 		//input高度固定
 	    $(window).resize(function() {
-	    	$('.wrapAll').height(HEIGHT)
         	$('.user_choose').height(HEIGHT);
         	$('.cover_share').height(HEIGHT);	
     	});
