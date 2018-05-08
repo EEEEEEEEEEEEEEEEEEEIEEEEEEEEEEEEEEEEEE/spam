@@ -97,12 +97,12 @@ $(document).ready(function(){
 	})
 
 	//input高度固定
-	var HEIGHT = $('.user_choose').height();
+	var HEIGHT = $('body').height();
 	    $(window).resize(function() {
-	    	console.log(HEIGHT)
         	$('.user_choose').height(HEIGHT);
+        	$('.cover_share').height(HEIGHT);
+        	
     	});
-
 
 	// share
 	$('.share').on('click',function(){
