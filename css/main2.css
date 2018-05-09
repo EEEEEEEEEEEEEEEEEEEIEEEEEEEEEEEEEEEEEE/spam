@@ -526,6 +526,9 @@ body{
 	height: 100%;
 	border-collapse:collapse;
 	border:0px;
+	position: absolute;
+	top:0;
+	left: 0;
 }
 .top_team .Thead,  .Tbody tr{
 	display: table;

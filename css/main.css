@@ -271,7 +271,12 @@ img{border: none;}
   height: 100vh;
   overflow: hidden;
   background-color: #f3f3f3;
-
+transition: all .5s linear;
+-webkit-transtion: all .5s linear;
+-webkit-transform: translateY(100%);
+-ms-transform: translateY(100%);
+-o-transform: translateY(100%);
+transform: translateY(100%);
 }
 .upLoad.active{
 	-webkit-transform: translateY(0);
