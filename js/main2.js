@@ -20,7 +20,7 @@
 		progress(100, [1,5],10,function(){
 			window.setTimeout(function(){
 				$('.Loading').hide();
-				$('.introduce').show()
+				$('.introduce').show();
 			},1000)
 		})
 	}
